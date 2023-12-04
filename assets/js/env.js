@@ -1,0 +1,1 @@
+var host = "http://localhost:821/www/kampus/20231/5sore/apotek/apotek_be/";
