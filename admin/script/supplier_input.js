@@ -10,7 +10,8 @@ $('#formSupplier').submit(function(e){
         processData: false, 
         dataType: 'json',
         success: (result) => {
-            console.log(result, url);
+            console.log(result);
+            alert("Data berhasil di tambahkan");
         },
     });
 })

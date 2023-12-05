@@ -14,8 +14,8 @@
                 <input type="text" class="form-control" id="nama" name="nama" />
             </div>
             <div class="form-group">
-                <label for="nomor">No. HP</label>
-                <input type="number" class="form-control" id="nomor" name="nomor" />
+                <label for="hp">No. HP</label>
+                <input type="number" class="form-control" id="hp" name="hp" />
             </div>
             <div class="form-group">
                 <label for="alamat">Alamat</label>
