@@ -17,16 +17,16 @@
           <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan nama obat" />
         </div>
         <div class="form-group">
-          <label for="supplier">Supplier</label>
-          <input type="text" class="form-control" id="supplier" name="supplier" placeholder="Masukkan Supplier" />
+          <label for="suplier">Suplier</label>
+          <input type="text" class="form-control" id="suplier" name="suplier" placeholder="Masukkan nama suplier" />
         </div>
         <div class="form-group">
           <label for="kategori">Kategori</label>
           <select class="custom-select" id="kategori" name="kategori">
-            <option selected>Choose...</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option selected>Pilihan..</option>
+            <option value="obat batuk">Obat Batuk </option>
+            <option value="obat tidur">Obat Tidur</option>
+            <option value="obat demam">Obat Demam</option>
           </select>
         </div>
         <div class="form-group">

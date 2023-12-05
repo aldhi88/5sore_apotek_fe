@@ -3,7 +3,7 @@ $('#input').submit(function(e){
     var formData = new FormData(this);
     $.ajax({
         type: 'POST',
-        url: "read.php",
+        url: host+"obat_input.php",
         data: formData,
         cache: false,
         contentType: false, 
