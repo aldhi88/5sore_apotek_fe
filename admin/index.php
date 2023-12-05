@@ -2,6 +2,7 @@
 if(!isset($_REQUEST['page'])){
     header('location:?page=dashboard');
 }
+
 ?>
 
 <!doctype html>
