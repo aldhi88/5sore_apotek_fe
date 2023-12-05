@@ -1,8 +1,6 @@
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
     <h1 class="h2">Input Obat</h1>
 </div>
-
-        <div class="col-md-10 dash">
             <div class="row">
                 <div class="col-4">
                     <form id="input" action="#" method="POST" enctype="multipart/form-data">
@@ -42,10 +40,5 @@
                 </div>
             </div>
         </div>
-        <!--end dashboard-->
-        <!-- Optional JavaScript -->
-        <script type="text/JavaScript" src="assets/lib/bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script type="text/JavaScript" src="assets/js/obat_input.js"></script>
-    </body>
-</html>
+
+    

@@ -1,24 +1,17 @@
 $('#input').submit(function(e){
-    
     e.preventDefault();
-
     var formData = new FormData(this);
     $.ajax({
-        url: host+"/obat_input.php",
         type: 'POST',
+        url: host+"obat_input.php",
         data: formData,
-        async: false,
         cache: false,
-        contentType: false,
-        processData: false,
-        success: function (response) {
-            if (response.status == 200) {
-                alert(response.msg);
-                console.log(response.body.data);
-            } else {
-                alert('Gagal menyimpan data.');
-            }
+        contentType: false, 
+        processData: false, 
+        dataType: 'json',
+        success: (result) => {
+            alert(result.msg);
         },
     });
-});
+})
 
