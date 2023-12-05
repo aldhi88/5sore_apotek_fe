@@ -45,7 +45,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link py-1" href="#">
+                <a class="nav-link py-1" href="?page=supplier_input">
                     <i class="fa-solid fa-circle-dot fa-fw"></i>
                     Supplier Baru
                 </a>
