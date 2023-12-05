@@ -4,11 +4,7 @@
 <div class="row">
     <div class="col-4">
       <form id="input" action="#" method="POST" enctype="multipart/form-data">
-        <div class="form-group">
-          <label for="gambar">Masukkan Gambar</label> <br>
-          <input id="gambar" name="gambar" type="file" class="form-control-file" accept="image/*" />
-        </div>
-        <div class="form-group">
+      <div class="form-group">
           <label for="kode">Kode Obat</label>
           <input type="text" class="form-control" id="kode" name="kode" placeholder="Masukkan kode obat" />
         </div>
@@ -17,18 +13,18 @@
           <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan nama obat" />
         </div>
         <div class="form-group">
-          <label for="suplier">Suplier</label>
-          <input type="text" class="form-control" id="suplier" name="suplier" placeholder="Masukkan nama suplier" />
+          <label for="kode_kategori">Kategori</label>
+          <input type="text" class="form-control" id="kode_kategori" name="kode_kategori" placeholder="Masukkan kode kategori" />
         </div>
         <div class="form-group">
-          <label for="kategori">Kategori</label>
-          <select class="custom-select" id="kategori" name="kategori">
-            <option selected>Pilihan..</option>
-            <option value="obat batuk">Obat Batuk </option>
-            <option value="obat tidur">Obat Tidur</option>
-            <option value="obat demam">Obat Demam</option>
-          </select>
+          <label for="kode_suplier">Suplier</label>
+          <input type="text" class="form-control" id="kode_suplier" name="kode_suplier" placeholder="Masukkan kode suplier" />
         </div>
+        <div class="form-group">
+          <label for="gambar">Masukkan Gambar</label> <br>
+          <input id="gambar" name="gambar" type="file" class="form-control-file" accept="image/*" />
+        </div>
+        
         <div class="form-group">
           <label for="harga">Harga</label>
           <input type="number" class="form-control" id="harga" name="harga" placeholder="Masukkan Harga" />
