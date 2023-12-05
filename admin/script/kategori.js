@@ -2,7 +2,7 @@ $(document).ready(function () {
   // api read
   $.ajax({
     type: "GET",
-    url: host + "read_kategori.php",
+    url: host + "raed_kategori.php",
     dataType: "json",
     async: true,
     cache: false,
@@ -20,7 +20,7 @@ $(document).ready(function () {
             <td>` +
             dataKategori[i].kode +
             `</td>
-                        <td>` +
+            <td>` +
             dataKategori[i].Kategori +
             `</td>
             <td>
