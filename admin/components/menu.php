@@ -7,7 +7,7 @@
                     Dashboard <span class="sr-only">(current)</span>
                 </a>
             </li>
-        </ul> 
+        </ul>
 
         <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
             <span>Kategori</span>
@@ -28,7 +28,7 @@
                     Kategori Baru
                 </a>
             </li>
-            
+
         </ul>
 
         <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
@@ -50,7 +50,7 @@
                     Supplier Baru
                 </a>
             </li>
-            
+
         </ul>
 
         <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
@@ -61,7 +61,7 @@
         </h6>
         <ul class="nav flex-column">
             <li class="nav-item">
-                <a class="nav-link py-1" href="#">
+                <a class="nav-link py-1" href="?page=obat_data">
                     <i class="fa-solid fa-circle-dot fa-fw"></i>
                     Data Obat
                 </a>
@@ -72,8 +72,8 @@
                     Obat Baru
                 </a>
             </li>
-            
+
         </ul>
-        
+
     </div>
 </nav>
