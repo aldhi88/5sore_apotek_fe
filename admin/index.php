@@ -44,11 +44,7 @@ if(!isset($_REQUEST['page'])){
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
                 
 
-                <?php
-                if(isset($_REQUEST['page'])){
-                    include $_REQUEST['page'].".php";
-                }
-                ?>
+                <?php include $_REQUEST['page'].".php"; ?>
 
                 
             </main>
@@ -58,6 +54,7 @@ if(!isset($_REQUEST['page'])){
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="script/<?= $_REQUEST['page'].".js" ?>"></script>
 </body>
 
 </html>
