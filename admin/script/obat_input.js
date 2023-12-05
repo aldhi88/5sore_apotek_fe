@@ -3,14 +3,14 @@ $('#input').submit(function(e){
     var formData = new FormData(this);
     $.ajax({
         type: 'POST',
-        url: host+"obat_input.php",
+        url: "read.php",
         data: formData,
         cache: false,
         contentType: false, 
         processData: false, 
         dataType: 'json',
-        success: (result) => {
-            alert(result.msg);
+        success: function (response) {
+           console.log(response) ;
         },
     });
 })
