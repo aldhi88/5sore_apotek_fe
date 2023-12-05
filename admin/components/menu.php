@@ -61,7 +61,7 @@
             </h6>
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link py-1" href="?page=obat">
+                    <a class="nav-link py-1" href="?page=obat_data">
                         <i class="fa-solid fa-circle-dot fa-fw"></i>
                         Data Obat
                     </a>
