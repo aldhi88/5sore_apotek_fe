@@ -2,7 +2,7 @@
     <div class="sidebar-sticky pt-3">
         <ul class="nav flex-column">
             <li class="nav-item">
-                <a class="nav-link active py-0" href="#">
+                <a class="nav-link active py-0" href="?page=dashboard">
                     <i class="fa-solid fa-house fa-fw"></i>
                     Dashboard <span class="sr-only">(current)</span>
                 </a>
