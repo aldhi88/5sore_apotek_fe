@@ -2,7 +2,7 @@ $(document).ready(function () {
     // api read
     $.ajax({
         type: "GET",
-        url: "http://apotek.test/5sore_apotek_fe/admin/be_dummy/read_obat.php",
+        url: host + "read_obat.php",
         dataType: "json",
         async: true,
         cache: false,
@@ -63,7 +63,7 @@ $(document).ready(function () {
         if (confirm("Yakin ingin hapus data dengan kode=" + kode + "?")) {
             $.ajax({
                 type: "POST",
-                url: "http://apotek.test/5sore_apotek_fe/admin/be_dummy/hapus_obat.php",
+                url: host + "hapus_obat.php",
                 data: { kode: kode },
                 dataType: "json",
                 async: true,
