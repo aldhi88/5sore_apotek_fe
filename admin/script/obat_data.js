@@ -18,7 +18,8 @@ $(document).ready(function () {
                         (i + 1) +
                         `</td>
                         <td>
-                            <img src="../assets/img/` +
+                            <img src="` +
+                        host +
                         dataObat[i].gambar +
                         `" width="100" />
                         </td>
