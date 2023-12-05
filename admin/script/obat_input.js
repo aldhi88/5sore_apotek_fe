@@ -14,4 +14,3 @@ $('#input').submit(function(e){
         },
     });
 })
-
