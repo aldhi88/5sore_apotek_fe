@@ -40,13 +40,13 @@ $(document).ready(function () {
                         `</td>
                         <td>
                             <button id="hapus" class="btn btn-danger" value="` +
-                        dataObat[i].id +
+                        dataObat[i].kode +
                         `">
                             Hapus
                             </button>
                             <button id="edit" class="btn btn-primary">
                                 <a class="text-light" href="?page=obat_edit&id=` +
-                        dataObat[i].id +
+                        dataObat[i].kode +
                         `">Edit</a>
                             </button>
                         </td>
