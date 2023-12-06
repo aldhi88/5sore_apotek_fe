@@ -10,7 +10,7 @@ $('#formKategori').submit(function(e){
         processData: false, 
         dataType: 'json',
         success: (result) => {
-            alert(result);
+            alert(result.msg);
         },
     });
 })
