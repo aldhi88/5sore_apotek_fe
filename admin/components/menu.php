@@ -67,7 +67,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link py-1" href="#">
+                <a class="nav-link py-1" href="?page=obat_input">
                     <i class="fa-solid fa-circle-dot fa-fw"></i>
                     Obat Baru
                 </a>
