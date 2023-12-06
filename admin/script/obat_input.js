@@ -9,8 +9,8 @@ $('#input').submit(function(e){
         contentType: false, 
         processData: false, 
         dataType: 'json',
-        success: function (response) {
-           console.log(response) ;
+        success: (result) => {
+            alert(result.msg);
         },
     });
 })
