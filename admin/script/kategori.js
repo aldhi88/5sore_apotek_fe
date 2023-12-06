@@ -2,7 +2,7 @@ $(document).ready(function () {
   // api read
   $.ajax({
     type: "GET",
-    url: host + "raed_kategori.php",
+    url: host + "read_kategori.php",
     dataType: "json",
     async: true,
     cache: false,
@@ -25,14 +25,14 @@ $(document).ready(function () {
             `</td>
             <td>
             <button id="hapus" class="btn btn-danger" value="` +
-            dataKategori[i].kode +
+            dataKategori[i].id +
             `">
             Hapus
             </button>
-            <button id="edit" class="btn btn-primary" value="` +
-            dataKategori[i].kode +
-            `">
-            Edit
+            <button id="edit" class="btn btn-primary">
+            <a class="text-light" href="?page=kategori_edit&id=` +
+            dataKategori[i].id +
+            `">Edit</a>
             </button>
             </td>
             </tr>
