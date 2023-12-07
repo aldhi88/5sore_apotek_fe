@@ -31,13 +31,13 @@ $(document).ready(function () {
                         `</td>
                         <td>
                             <button id="hapus" class="btn btn-danger" value="` +
-                        dataSupplier[i].id +
+                        dataSupplier[i].kode +
                         `">
                             Hapus
                             </button>
                             <button id="edit" class="btn btn-primary">
                                 <a class="text-light" href="?page=supplier_edit&id=` +
-                        dataSupplier[i].id +
+                        dataSupplier[i].kode +
                         `">Edit</a>
                             </button>
                         </td>
