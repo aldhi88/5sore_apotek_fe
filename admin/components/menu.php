@@ -39,7 +39,7 @@
         </h6>
         <ul class="nav flex-column">
             <li class="nav-item">
-                <a class="nav-link py-1" href="#">
+                <a class="nav-link py-1" href="?page=supplier_data">
                     <i class="fa-solid fa-circle-dot fa-fw"></i>
                     Data Supplier
                 </a>
