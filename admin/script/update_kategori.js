@@ -1,39 +1,54 @@
-$(document).on("click", "#edit", function () {
-    var categoryId = $(this).data('kode');
+$(document).ready(function () {
+    var getUrlParameter = function getUrlParameter(sParam) {
+        var sPageURL = window.location.search.substring(1),
+            sURLVariables = sPageURL.split("&"),
+            sParameterName,
+            i;
+
+        for (i = 0; i < sURLVariables.length; i++) {
+            sParameterName = sURLVariables[i].split("=");
+
+            if (sParameterName[0] === sParam) {
+                return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+            }
+        }
+        return false;
+    };
+
+    var id = getUrlParameter("kode");
     
     // Panggil API untuk membaca data berdasarkan ID
     $.ajax({
-        url: host + "read_kategori_by_id.php?id=" + categoryId,
-        url: host+"read_kategori.php",
-        type: 'GET',
+        type: "GET",
+        url: host + "/read_kategori.php?id=" + id,
+        async: true,
+        cache: false,
+        contentType: false,
+        processData: false,
+        dataType: "json",
+        success: function (response) {
+            var data = response.body.data[0];
 
-        success: function (data) {
-            // Parsing data dan mengisi formulir edit
-            $('#kode').val(data.kode);
-            $('#nama').val(data.nama);
-            $('#formKategori').attr('data-id', categoryId);
+            $("#kode").val(data.kode);
+            $("#nama").val(data.nama);
         },
     });
-});
 
-$('#formKategori').submit(function(e){
-    e.preventDefault();
-    
-    // Ambil ID dari formulir
-    var categoryId = $(this).data('id');
-    
-    // Panggil API untuk pembaruan
-    $.ajax({
-        type: 'POST',
-        url: host + "update_kategori.php?id=" + categoryId,
-        data: new FormData(this),
-        cache: false,
-        contentType: false, 
-        processData: false, 
-        dataType: 'json',
-        success: function (result) {
-            alert(result.msg);
-        },
+    $("#formKategori").submit(function (e) {
+        e.preventDefault();
+        var formData = new FormData(this);
+        $.ajax({
+            type: "POST",
+            url: host + "edit_kategori.php",
+            data: formData,
+            cache: false,
+            contentType: false,
+            processData: false,
+            dataType: "json",
+            success: function (response) {
+                alert(response.msg);
+            },
+        });
     });
 
 });
