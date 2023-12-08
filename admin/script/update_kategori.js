@@ -1,5 +1,5 @@
-$('.btn-edit').on('click', function () {
-    var categoryId = $(this).data('id');
+$(document).on("click", "#edit", function () {
+    var categoryId = $(this).data('kode');
     
     // Panggil API untuk membaca data berdasarkan ID
     $.ajax({
