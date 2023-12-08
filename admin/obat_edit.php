@@ -10,7 +10,7 @@
         <form action="" method="POST" id="formObat">
             <div class="form-group">
                 <label for="kode">Kode Obat</label>
-                <input type="text" class="form-control" id="kode" name="kode" />
+                <input type="text" class="form-control" id="kode" name="kode" readonly />
             </div>
             <div class="form-group">
                 <label for="nama">Nama Obat</label>
@@ -29,8 +29,8 @@
                 <input type="file" class="form-control" id="gambar" name="gambar" />
             </div>
             <div class="form-group">
-                <label for="hp">Harga</label>
-                <input type="number" class="form-control" id="hp" name="hp" />
+                <label for="harga">Harga</label>
+                <input type="number" class="form-control" id="harga" name="harga" />
             </div>
             <div class="form-group">
                 <button class="btn btn-danger" type="reset">Reset</button>
