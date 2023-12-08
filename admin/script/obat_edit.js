@@ -15,7 +15,7 @@ $(document).ready(function () {
         return false;
     };
 
-    var id = getUrlParameter("id");
+    var id = getUrlParameter("kode");
 
     // menampilkan data by=id
     $.ajax({
