@@ -2,7 +2,7 @@ $('.btn-edit').on('click', function () {
     var categoryId = $(this).data('id');
     
     $.ajax({
-        url: host+"update_kategori.php",
+        url: host+"read_kategori.php",
         type: 'GET',
         success: function (data) {
             $('#kode').val(data.kode);
