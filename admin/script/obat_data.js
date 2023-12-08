@@ -2,7 +2,7 @@ $(document).ready(function () {
     // api read
     $.ajax({
         type: "GET",
-        url: "be_dummy/read_obat.php",
+        url: host + "read_obat.php",
         dataType: "json",
         async: true,
         cache: false,
