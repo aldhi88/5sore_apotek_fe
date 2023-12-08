@@ -2,51 +2,42 @@ $(document).ready(function () {
     // api read
     $.ajax({
         type: "GET",
-        url: host + "read_obat.php",
+        url: host + "read_supplier.php",
         dataType: "json",
         async: true,
         cache: false,
         contentType: false,
         processData: false,
         success: function (data) {
-            var dataObat = data.body.data;
-            for (var i = 0; i < dataObat.length; i++) {
-                $("#tableObat").append(
+            var dataSupplier = data.body.data;
+            for (var i = 0; i < dataSupplier.length; i++) {
+                $("#tableSupplier").append(
                     `
                     <tr>
                         <td>` +
                         (i + 1) +
                         `</td>
-                        <td>
-                            <img src="` +
-                        host +
-                        dataObat[i].gambar +
-                        `" width="100" />
-                        </td>
                         <td>` +
-                        dataObat[i].kode +
+                        dataSupplier[i].kode +
                         `</td>
                         <td>` +
-                        dataObat[i].obat +
+                        dataSupplier[i].nama +
                         `</td>
                         <td>` +
-                        dataObat[i].supplier +
+                        dataSupplier[i].alamat +
                         `</td>
                         <td>` +
-                        dataObat[i].kategori +
-                        `</td>
-                        <td>` +
-                        dataObat[i].harga +
+                        dataSupplier[i].hp +
                         `</td>
                         <td>
                             <button id="hapus" class="btn btn-danger" value="` +
-                        dataObat[i].kode +
+                        dataSupplier[i].kode +
                         `">
                             Hapus
                             </button>
                             <button id="edit" class="btn btn-primary">
-                                <a class="text-light" href="?page=obat_edit&id=` +
-                        dataObat[i].kode +
+                                <a class="text-light" href="?page=supplier_edit&id=` +
+                        dataSupplier[i].kode +
                         `">Edit</a>
                             </button>
                         </td>
@@ -64,7 +55,7 @@ $(document).ready(function () {
         if (confirm("Yakin ingin hapus data dengan kode=" + kode + "?")) {
             $.ajax({
                 type: "POST",
-                url: host + "hapus_obat.php",
+                url: host + "hapus_supplier.php",
                 data: { kode: kode },
                 dataType: "json",
                 async: true,
