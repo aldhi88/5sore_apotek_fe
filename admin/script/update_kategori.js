@@ -4,6 +4,9 @@ $('.btn-edit').on('click', function () {
     // Panggil API untuk membaca data berdasarkan ID
     $.ajax({
         url: host + "read_kategori_by_id.php?id=" + categoryId,
+        url: host+"read_kategori.php",
+        type: 'GET',
+
         success: function (data) {
             // Parsing data dan mengisi formulir edit
             $('#kode').val(data.kode);
@@ -32,4 +35,8 @@ $('#formKategori').submit(function(e){
             alert(result.msg);
         },
     });
+
 });
+
+
+
