@@ -39,7 +39,8 @@ $(document).ready(function () {
                         dataObat[i].harga +
                         `</td>
                         <td>
-                            <button id="hapus" class="btn btn-danger" value="` +
+                            <button id="hapus" class="btn btn-danger"
+                                <a class="text-light" href="?page=obat_edit&kode=` + +
                         dataObat[i].kode +
                         `">
                             Hapus

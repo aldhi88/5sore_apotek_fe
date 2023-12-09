@@ -15,12 +15,12 @@ $(document).ready(function () {
         return false;
     };
 
-    var id = getUrlParameter("kode");
+    var kode = getUrlParameter("kode");
 
     // menampilkan data by=id
     $.ajax({
         type: "GET",
-        url: host + "/read_one_obat.php?id=" + id,
+        url: host + "/read_one_obat.php?kode=" + kode,
         async: true,
         cache: false,
         contentType: false,
