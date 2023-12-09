@@ -20,7 +20,7 @@ $(document).ready(function () {
     // Panggil API untuk membaca data berdasarkan ID
     $.ajax({
         type: "GET",
-        url: host + "/read_kategori.php?id=" + id,
+        url: host + "/read_one_kategori.php?id=" + id,
         async: true,
         cache: false,
         contentType: false,
@@ -39,7 +39,7 @@ $(document).ready(function () {
         var formData = new FormData(this);
         $.ajax({
             type: "POST",
-            url: host + "edit_kategori.php",
+            url: host + "update_kategori.php",
             data: formData,
             cache: false,
             contentType: false,
