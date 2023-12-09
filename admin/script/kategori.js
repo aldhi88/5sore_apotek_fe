@@ -30,7 +30,7 @@ $(document).ready(function () {
             Hapus
             </button>
             <button id="edit" class="btn btn-primary">
-            <a class="text-light" href="?page=kategori_edit&id=` +
+            <a class="text-light" href="?page=kategori_edit&kode=` +
             dataKategori[i].kode +
             `">Edit</a>
             </button>

@@ -15,12 +15,12 @@ $(document).ready(function () {
         return false;
     };
 
-    var kode = getUrlParameter("kode");
+    var id = getUrlParameter("kode");
     
-    // Panggil API untuk membaca data berdasarkan ID
+    // Panggil API untuk membaca data
     $.ajax({
         type: "GET",
-        url: host + "/read_one_kategori.php?id=" + kode,
+        url: host + "/read_one_kategori.php?kode=" + id,
         async: true,
         cache: false,
         contentType: false,
