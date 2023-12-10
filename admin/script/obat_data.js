@@ -65,7 +65,7 @@ $(document).ready(function () {
         if (confirm("Yakin ingin hapus data dengan kode=" + kode + "?")) {
             $.ajax({
                 type: "POST",
-                url: host + "hapus_obat.php",
+                url: host + "delete_obat.php",
                 data: { kode: kode },
                 dataType: "json",
                 async: true,
