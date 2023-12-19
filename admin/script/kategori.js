@@ -24,10 +24,11 @@ $(document).ready(function () {
             dataKategori[i].Kategori +
             `</td>
             <td>
-            <button id="hapus" class="btn btn-danger" value="` +
+            <button id="hapus" class="btn btn-danger" value="
+            <a class="text-light" href="?page=kategori_edit&kode=` +
             dataKategori[i].kode +
             `">
-            Hapus
+            Hapus</a>
             </button>
             <button id="edit" class="btn btn-primary">
             <a class="text-light" href="?page=kategori_edit&kode=` +

@@ -2,7 +2,7 @@ $(document).ready(function () {
     // api read
     $.ajax({
         type: "GET",
-        url: host + "read_obat.php",
+        url: "read_obat.php",
         dataType: "json",
         async: true,
         cache: false,
@@ -39,10 +39,7 @@ $(document).ready(function () {
                         dataObat[i].harga +
                         `</td>
                         <td>
-                            <button id="hapus" class="btn btn-danger"
-                                <a class="text-light" href="?page=obat_edit&kode=` + +
-                        dataObat[i].kode +
-                        `">
+                        <button class="btn btn-danger hapus" data-kode="${dataObat[i].kode}">
                             Hapus
                             </button>
                             <button id="edit" class="btn btn-primary">
@@ -59,23 +56,30 @@ $(document).ready(function () {
     });
 
     // api hapus
-    $(document).on("click", "#hapus", function () {
-        var kode = $(this).val();
-
-        if (confirm("Yakin ingin hapus data dengan kode=" + kode + "?")) {
-            $.ajax({
-                type: "POST",
-                url: host + "hapus_obat.php",
-                data: { kode: kode },
-                dataType: "json",
-                async: true,
-                cache: false,
-                contentType: false,
-                processData: false,
-                success: function (response) {
-                    alert(response.msg);
-                },
-            });
-        }
+    $(document).ready(function () {
+        // ... (skrip sebelumnya)
+    
+        // api hapus
+        $(document).on("click", ".hapus", function () {
+            var kode = $(this).data('kode');
+    
+    
+            if (confirm("Yakin ingin hapus data dengan kode=" + kode + "?")) {
+                $.ajax({
+                    type: "POST",
+                    url: "hapus_obat.php",
+                    data: { kode: kode },
+                    dataType: "json",
+                    success: function (response) {
+                        alert(response.msg);
+                        // Jika ingin melakukan sesuatu setelah penghapusan, tambahkan di sini.
+                    },
+                    error: function (xhr, status, error) {
+                        console.error(xhr.responseText);
+                        // Handle error jika diperlukan.
+                    },
+                });
+            }
+        });
     });
 });
