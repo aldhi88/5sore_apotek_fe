@@ -15,7 +15,7 @@ $('#input').submit(function(e){
     });
   })
 document.addEventListener('DOMContentLoaded', function() {
-  const url = 'read_supplier.php'; // API URL
+  const url = host+'read_supplier.php'; // API URL
   const xhr = new XMLHttpRequest();
   xhr.open('GET', url, true);
   xhr.onload = function() {
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
   xhr.send();
  
   // AJAX request for kategori
-  const url2 = 'read_kategori.php'; // API URL
+  const url2 = host+'read_kategori.php'; // API URL
   const xhr2 = new XMLHttpRequest();
   xhr2.open('GET', url2, true);
   xhr2.onload = function() {
