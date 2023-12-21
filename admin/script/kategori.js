@@ -21,7 +21,7 @@ $(document).ready(function () {
             dataKategori[i].kode +
             `</td>
             <td>` +
-            dataKategori[i].Kategori +
+            dataKategori[i].nama +
             `</td>
             <td>
             <button id="hapus" class="btn btn-danger" value="` +
@@ -49,7 +49,7 @@ $(document).ready(function () {
     if (confirm("Yakin ingin hapus data dengan kode=" + kode + "?")) {
       $.ajax({
         type: "POST",
-        url: host + "hapus_kategori.php",
+        url: host + "delete_kategori.php",
         data: { kode: kode },
         dataType: "json",
         async: true,
