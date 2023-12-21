@@ -10,6 +10,7 @@
                     <th>No</th>
                     <th>Kode</th>
                     <th>Kategori</th>
+                    <th>Aksi</th>
                 </tr>
             </thead>
             <tbody id="tableKategori">
