@@ -4,7 +4,7 @@
 
 <div class="row">
     <div class="col">
-        <<table class="table table-bordered">
+        <table class="table table-bordered">
             <thead>
                 <tr>
                     <th scope="col">No</th>
