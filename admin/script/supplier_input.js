@@ -11,6 +11,7 @@ $('#formSupplier').submit(function(e){
         dataType: 'json',
         success: (result) => {
             alert(result.msg);
+            location.href = "?page=supplier";
         },
     });
 })
