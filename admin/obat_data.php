@@ -4,17 +4,17 @@
 
 <div class="row">
     <div class="col">
-        <table border="1" cellpadding="10">
+        <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th>No</th>
-                    <th>Gambar</th>
-                    <th>Kode Obat</th>
-                    <th>Nama Obat</th>
-                    <th>Supplier</th>
-                    <th>Kategori</th>
-                    <th>Harga</th>
-                    <th>Aksi</th>
+                    <th scope="col">No</th>
+                    <th scope="col">Gambar</th>
+                    <th scope="col">Kode Obat</th>
+                    <th scope="col">Nama Obat</th>
+                    <th scope="col">Supplier</th>
+                    <th scope="col">Kategori</th>
+                    <th scope="col">Harga</th>
+                    <th scope="col">Aksi</th>
                 </tr>
             </thead>
             <tbody id="tableObat">
