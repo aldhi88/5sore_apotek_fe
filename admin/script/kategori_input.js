@@ -11,7 +11,7 @@ $("#formKategori").submit(function (e) {
     dataType: "json",
     success: (result) => {
       alert(result.msg);
-      location.href = "?page=kategori";
+      location.href = host_fe + "?page=kategori";
     },
   });
 });
