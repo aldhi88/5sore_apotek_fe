@@ -1,18 +1,17 @@
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
     <h1 class="h2">Data Supplier</h1>
 </div>
-
 <div class="row">
     <div class="col">
-        <table border="1" cellpadding="10">
+        <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th>No</th>
-                    <th>Kode</th>
-                    <th>Supplier</th>
-                    <th>Alamat</th>
-                    <th>Hp</th>
-                    <th>Aksi</th>
+                    <th scope="col">No</th>
+                    <th scope="col">Kode</th>
+                    <th scope="col">Supplier</th>
+                    <th scope="col">Alamat</th>
+                    <th scope="col">Hp</th>
+                    <th scope="col">Aksi</th>
                 </tr>
             </thead>
             <tbody id="tableSupplier">

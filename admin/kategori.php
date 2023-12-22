@@ -4,12 +4,13 @@
 
 <div class="row">
     <div class="col">
-        <table border="1" cellpadding="10">
+        <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th>No</th>
-                    <th>Kode</th>
-                    <th>Kategori</th>
+                    <th scope="col">No</th>
+                    <th scope="col">Kode</th>
+                    <th scope="col">kategori</th>
+                    <th scope="col">Aksi</th>
                 </tr>
             </thead>
             <tbody id="tableKategori">
