@@ -11,7 +11,7 @@ $('#formSupplier').submit(function(e){
         dataType: 'json',
         success: (result) => {
             alert(result.msg);
-            location.href = "http://localhost:821/www/kampus/20231/5sore/apotek/apotek_fe/?page=supplier";
+            location.href = host_fe + "?page=supplier";
         },
     });
 })
