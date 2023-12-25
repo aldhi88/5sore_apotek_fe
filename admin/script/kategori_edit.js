@@ -20,7 +20,7 @@ $(document).ready(function () {
     // Panggil API untuk membaca data
     $.ajax({
         type: "GET",
-        url: host+ "/read_one_kategori.php?kode=" + id,
+        url: host+"/read_one_kategori.php?kode=" + id,
         async: true,
         cache: false,
         contentType: false,
@@ -53,6 +53,3 @@ $(document).ready(function () {
     });
 
 });
-
-
-
