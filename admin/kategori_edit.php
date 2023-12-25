@@ -3,11 +3,11 @@
 </div>
 
 <div class="row">
-    <div class="col">
+    <div class="col-md-4">
         <form id="formKategori">
             <div class="form-group">
                 <label for="kode">Kode Kategori</label>
-                <input type="text" class="form-control" id="kode" name="kode" />
+                <input type="text" class="form-control" id="kode" name="kode" readonly />
             </div>
             <div class="form-group">
                 <label for="nama">Nama Kategori</label>
