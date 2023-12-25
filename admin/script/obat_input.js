@@ -33,7 +33,7 @@ $('#input').submit(function(e){
 
             // Tambahkan opsi pemilihan untuk setiap kategori
             for (var i = 0; i < categories.length; i++) {
-                select.append(`<option value="${categories[i].kode}">${categories[i].kode}</option>`);
+                select.append(`<option value="${categories[i].kode}">${categories[i].nama}</option>`);
             }
         },
     });
@@ -60,7 +60,7 @@ function populasiSuplier() {
 
           // Tambahkan opsi pemilihan untuk setiap kategori
           for (var i = 0; i < categories.length; i++) {
-              select.append(`<option value="${categories[i].kode}">${categories[i].kode}</option>`);
+              select.append(`<option value="${categories[i].kode}">${categories[i].nama}</option>`);
           }
       },
   });
