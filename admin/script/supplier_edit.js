@@ -50,6 +50,7 @@ $(document).ready(function () {
             dataType: "json",
             success: function (response) {
                 alert(response.msg);
+                location.href = host_fe + "?page=supplier_data";
             },
         });
     });
