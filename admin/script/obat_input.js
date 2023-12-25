@@ -65,7 +65,7 @@ function populasiSuplier() {
       },
   });
 }
-// Panggil fungsi untuk mengisi opsi pemilihan kategori saat halaman dimuat
+// Panggil fungsi untuk mengisi opsi pemilihan kategori saat halaman dimuat 
 $(document).ready(function () {
   populasiSuplier();
 });

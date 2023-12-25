@@ -33,7 +33,7 @@
           <input type="number" class="form-control" id="harga" name="harga" placeholder="Masukkan Harga" />
         </div>
         <div class="form-group">
-          <button class="btn btn-primary" type="submit">Submit</button>
+          <button class="btn btn-primary" type="submit">Submit</button> 
         </div>
       </form>
     </div>
