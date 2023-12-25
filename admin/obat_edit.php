@@ -6,7 +6,7 @@
 </div>
 
 <div class="row">
-    <div class="col">
+    <div class="col-md-4">
         <form action="" method="POST" id="formObat">
             <div class="form-group">
                 <label for="kode">Kode Obat</label>

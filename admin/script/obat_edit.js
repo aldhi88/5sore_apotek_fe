@@ -27,7 +27,7 @@ $(document).ready(function () {
         processData: false,
         dataType: "json",
         success: function (response) {
-            var data = response.body.data[0];
+            var data = response.body.data;
 
             $("#kode").val(data.kode);
             $("#nama").val(data.nama);
