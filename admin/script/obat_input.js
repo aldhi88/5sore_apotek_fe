@@ -14,35 +14,58 @@ $('#input').submit(function(e){
         },
     });
   })
-document.addEventListener('DOMContentLoaded', function() {
-  const url = host+'read_supplier.php'; // API URL
-  const xhr = new XMLHttpRequest();
-  xhr.open('GET', url, true);
-  xhr.onload = function() {
-     if (this.status === 200) {
-       const supplier = JSON.parse(this.responseText);
-       let options = '<option value="">--Pilih Supplier--</option>';
-       supplier.forEach(function(supplier) {
-         options += `<option value="${supplier.kode_supplier}">${supplier.nama}</option>`;
-       });
-       document.getElementById('kode_supplier').innerHTML = options;
-     }
-  };
-  xhr.send();
- 
-  // AJAX request for kategori
-  const url2 = host+'read_kategori.php'; // API URL
-  const xhr2 = new XMLHttpRequest();
-  xhr2.open('GET', url2, true);
-  xhr2.onload = function() {
-     if (this.status === 200) {
-       const kategori = JSON.parse(this.responseText);
-       let options = '<option value="">--Pilih Kategori--</option>';
-       kategori.forEach(function(kategori) {
-         options += `<option value="${kategori.kode_kategori}">${kategori.nama}</option>`;
-       });
-       document.getElementById('kode_kategori').innerHTML = options;
-     }
-  };
-  xhr2.send();
- });
+
+   function populasiKategori() {
+    $.ajax({
+        type: "GET",
+        url: host+"read_kategori.php", // Gantilah dengan URL API kategori
+        dataType: "json",
+        async: true,
+        cache: false,
+        contentType: false,
+        processData: false,
+        success: function (data) {
+            var categories = data.body.data;
+            var select = $("#kode_kategori");
+
+            // Kosongkan opsi pemilihan sebelum mengisi kembali
+            select.empty();
+
+            // Tambahkan opsi pemilihan untuk setiap kategori
+            for (var i = 0; i < categories.length; i++) {
+                select.append(`<option value="${categories[i].kode}">${categories[i].nama}</option>`);
+            }
+        },
+    });
+}
+// Panggil fungsi untuk mengisi opsi pemilihan kategori saat halaman dimuat
+$(document).ready(function () {
+    populasiKategori();
+});
+function populasiSuplier() {
+  $.ajax({
+      type: "GET",
+      url: host+"read_supplier.php", // Gantilah dengan URL API kategori
+      dataType: "json",
+      async: true,
+      cache: false,
+      contentType: false,
+      processData: false,
+      success: function (data) {
+          var categories = data.body.data;
+          var select = $("#kode_supplier");
+
+          // Kosongkan opsi pemilihan sebelum mengisi kembali
+          select.empty();
+
+          // Tambahkan opsi pemilihan untuk setiap kategori
+          for (var i = 0; i < categories.length; i++) {
+              select.append(`<option value="${categories[i].kode}">${categories[i].nama}</option>`);
+          }
+      },
+  });
+}
+// Panggil fungsi untuk mengisi opsi pemilihan kategori saat halaman dimuat 
+$(document).ready(function () {
+  populasiSuplier();
+});

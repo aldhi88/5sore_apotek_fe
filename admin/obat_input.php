@@ -17,13 +17,13 @@
           <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan nama obat" />
         </div>
         <div class="form-group">
-          <label for="kode_supplier">Supplier</label>
+          <label for="kode_supplier">Supplier </label>
           <select class="form-control" id="kode_supplier" name="kode_supplier">
             <!-- Opsi supplier akan dimasukkan melalui Ajax -->
           </select>
         </div>
                 <div class="form-group">
-          <label for="kode_kategori">Kategori</label>
+          <label for="kode_kategori">Kategori </label>
           <select class="form-control" id="kode_kategori" name="kode_kategori">
             <!-- Opsi supplier akan dimasukkan melalui Ajax -->
           </select>
@@ -33,7 +33,7 @@
           <input type="number" class="form-control" id="harga" name="harga" placeholder="Masukkan Harga" />
         </div>
         <div class="form-group">
-          <button class="btn btn-primary" type="submit">Submit</button>
+          <button class="btn btn-primary" type="submit">Submit</button> 
         </div>
       </form>
     </div>
