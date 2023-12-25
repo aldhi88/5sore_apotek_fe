@@ -23,7 +23,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link py-1" href="#">
+                <a class="nav-link py-1" href="?page=kategori_input">
                     <i class="fa-solid fa-circle-dot fa-fw"></i>
                     Kategori Baru
                 </a>
