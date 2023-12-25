@@ -39,7 +39,7 @@ $(document).ready(function () {
         var formData = new FormData(this);
         $.ajax({
             type: "POST",
-            url: host + "update_kategori.php",
+            url: host+"update_kategori.php",
             data: formData,
             cache: false,
             contentType: false,
@@ -47,6 +47,7 @@ $(document).ready(function () {
             dataType: "json",
             success: function (response) {
                 alert(response.msg);
+                window.location.href = host_fe+"?page=kategori";
             },
         });
     });

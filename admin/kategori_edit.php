@@ -3,7 +3,7 @@
 </div>
 
 <div class="row">
-    <div class="col">
+    <div class="col-md-4">
         <form id="formKategori">
             <div class="form-group">
                 <label for="kode">Kode Kategori</label>
