@@ -47,7 +47,7 @@ $(document).ready(function () {
             dataType: "json",
             success: function (response) {
                 alert(response.msg);
-                window.location.href = host_fe+"?page=kategori";
+                window.location.href = host_fe + "?page=kategori";
             },
         });
     });
