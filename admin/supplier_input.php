@@ -3,7 +3,7 @@
 </div>
 
 <div class="row">
-    <div class="col">
+    <div class="col-4">
         <form action="" method="POST" id="formSupplier">
             <div class="form-group">
                 <label for="kode">Kode Supplier</label>
