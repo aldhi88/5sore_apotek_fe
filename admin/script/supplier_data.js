@@ -66,9 +66,9 @@ $(document).ready(function () {
                 async: true,
                 success: function (response) {
                     alert(response.msg);
+                    readData();
                 },
             });
-            readData();
         }
     });
 });
