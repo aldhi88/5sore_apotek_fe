@@ -1,24 +1,7 @@
-$('#input').submit(function(e){
-    e.preventDefault();
-    var formData = new FormData(this);
-    $.ajax({
-        type: 'POST',
-        url: host+"obat_input.php",
-        data: formData,
-        cache: false,
-        contentType: false, 
-        processData: false, 
-        dataType: 'json',
-        success: (result) => {
-            alert(result.msg);
-        },
-    });
-  })
-
-   function populasiKategori() {
+function populasiKategori() {
     $.ajax({
         type: "GET",
-        url: host+"read_kategori.php", // Gantilah dengan URL API kategori
+        url: host + "read_kategori.php", // Gantilah dengan URL API kategori
         dataType: "json",
         async: true,
         cache: false,
@@ -45,7 +28,7 @@ $(document).ready(function () {
 function populasiSuplier() {
   $.ajax({
       type: "GET",
-      url: host+"read_supplier.php", // Gantilah dengan URL API kategori
+      url: host + "read_supplier.php", // Gantilah dengan URL API kategori
       dataType: "json",
       async: true,
       cache: false,
@@ -69,3 +52,20 @@ function populasiSuplier() {
 $(document).ready(function () {
   populasiSuplier();
 });
+$('#input').submit(function(e){
+    e.preventDefault();
+    var formData = new FormData(this);
+    $.ajax({
+        type: 'POST',
+        url: host + "input_obat.php",
+        data: formData,
+        cache: false,
+        contentType: false, 
+        processData: false, 
+        dataType: 'json',
+        success: (result) => {
+            alert(result.msg);
+            location.href = host_fe + "admin/?page=obat_data";
+        },
+    });
+  })
