@@ -1,0 +1,18 @@
+body {
+    background-color: #d9d9d9;
+}
+
+header nav {
+    background-color: #212529;
+}
+
+main .container .page {
+    margin: auto;
+    text-align: center;
+    width: 60%;
+    padding: 50px 0;
+}
+
+main {
+    margin-bottom: 50px;
+}
