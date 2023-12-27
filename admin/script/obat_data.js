@@ -47,7 +47,7 @@ $(document).ready(function () {
                             `">Hapus
                         </button>
                         <button id="edit" class="btn btn-primary">
-                                <a class="text-light" href="?page=obat_edit&ikoded=` +
+                                <a class="text-light" href="?page=obat_edit&kode=` +
                             dataObat[i].kode +
                             `">Edit</a>
                             </button>
