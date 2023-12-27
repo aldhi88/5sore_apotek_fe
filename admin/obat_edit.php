@@ -18,11 +18,17 @@
             </div>
             <div class="form-group">
                 <label for="kode_kategori">Kode Kategori</label>
-                <input type="text" class="form-control" id="kode_kategori" name="kode_kategori" />
+                <select class="form-control" name="kode_kategori" id="kode_kategori">
+                    <option disabled>Pilih</option>
+                    <!-- data dipanggil api -->
+                </select>
             </div>
             <div class="form-group">
                 <label for="kode_supplier">Kode Supplier</label>
-                <input type="text" class="form-control" id="kode_supplier" name="kode_supplier" />
+                <select class="form-control" name="kode_supplier" id="kode_supplier">
+                    <option disabled>Pilih</option>
+                    <!-- data dipanggil api -->
+                </select>
             </div>
             <div class="form-group">
                 <label for="gambar">Gambar</label>

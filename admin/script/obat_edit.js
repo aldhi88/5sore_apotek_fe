@@ -15,12 +15,47 @@ $(document).ready(function () {
         return false;
     };
 
-    var kode = getUrlParameter("kode");
-
-    // menampilkan data by=id
+    // menampilkan select supplier
     $.ajax({
         type: "GET",
-        url: host + "/read_one_obat.php?kode=" + kode,
+        url: host + "read_supplier.php",
+        async: true,
+        cache: false,
+        contentType: false,
+        processData: false,
+        dataType: "json",
+        success: function (response) {
+            var supplier = response.body.data;
+
+            for (var i = 0; i < supplier.length; i++) {
+                $("#kode_supplier").append(`<option value="` + supplier[i].kode + `">` + supplier[i].nama + `</option>`);
+            }
+        },
+    });
+
+    // menampilkan select kategori
+    $.ajax({
+        type: "GET",
+        url: host + "read_kategori.php",
+        async: true,
+        cache: false,
+        contentType: false,
+        processData: false,
+        dataType: "json",
+        success: function (response) {
+            var kategori = response.body.data;
+
+            for (var i = 0; i < kategori.length; i++) {
+                $("#kode_kategori").append(`<option value="` + kategori[i].kode + `">` + kategori[i].nama + `</option>`);
+            }
+        },
+    });
+
+    // menampilkan data by kode
+    var kode = getUrlParameter("kode");
+    $.ajax({
+        type: "GET",
+        url: host + "read_one_obat.php?kode=" + kode,
         async: true,
         cache: false,
         contentType: false,
@@ -51,6 +86,7 @@ $(document).ready(function () {
             dataType: "json",
             success: function (response) {
                 alert(response.msg);
+                location.href = host_fe + "admin/?page=obat_data";
             },
         });
     });
