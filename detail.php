@@ -4,12 +4,8 @@
         <div class="col-8">
             <div class="left-side">
                 <div class="card">
-                    <div class="card-body p-5">
-                        <img src="assets/img/2.jpg" class="img-fluid" alt="" />
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ullam quisquam nihil quis culpa ipsam quod accusantium voluptas dolor necessitatibus voluptate odio voluptates, minima adipisci a iste est, quos porro? Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Ducimus quaerat laborum nihil aspernatur labore totam dolorum consectetur molestias, illo omnis tempora numquam repellendus impedit amet non placeat? A, atque dolor?
-                        </p>
+                    <div class="card-body p-5" id="gambar-obat">
+                        <!-- gambar tampil disini -->
                     </div>
                 </div>
             </div>
@@ -19,11 +15,8 @@
             <div class="right-side">
                 <div class="card">
                     <div class="card-body">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Nama &emsp;&emsp;: Obat Bodrek</li>
-                            <li class="list-group-item">Harga &emsp;&emsp;: Rp. 10.000,-/pack</li>
-                            <li class="list-group-item">Supplier &emsp;: Toko Obat</li>
-                            <li class="list-group-item">Kategori &emsp;: Obat Umum</li>
+                        <ul class="list-group list-group-flush" id="detail-obat">
+                            <!-- data tampil disini -->
                         </ul>
                     </div>
                 </div>
