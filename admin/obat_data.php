@@ -11,8 +11,8 @@
                     <th scope="col">Gambar</th>
                     <th scope="col">Kode Obat</th>
                     <th scope="col">Nama Obat</th>
-                    <th scope="col">Supplier</th>
-                    <th scope="col">Kategori</th>
+                    <th scope="col">Kode Supplier</th>
+                    <th scope="col">Kode Kategori</th>
                     <th scope="col">Harga</th>
                     <th scope="col">Aksi</th>
                 </tr>
