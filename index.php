@@ -14,6 +14,7 @@ if(!isset($_REQUEST['page'])){
 
         <!-- css external -->
         <link rel="stylesheet" href="assets/css/index.css" />
+        <script src="env.js" crossorigin="anonymous"></script>
         <title>Apotek | Home</title>
     </head>
 
