@@ -4,6 +4,6 @@
 
 <div class="row">
     <div class="col">
-        konten
+        selamat datang
     </div>
 </div>
