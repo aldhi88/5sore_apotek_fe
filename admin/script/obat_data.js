@@ -33,10 +33,10 @@ $(document).ready(function () {
                             dataObat[i].nama +
                             `</td>
                         <td>` +
-                            dataObat[i].kode_supplier +
+                            dataObat[i].nama_supplier +
                             `</td>
                         <td>` +
-                            dataObat[i].kode_kategori +
+                            dataObat[i].nama_kategori +
                             `</td>
                         <td>` +
                             dataObat[i].harga +
