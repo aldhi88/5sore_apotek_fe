@@ -40,8 +40,8 @@ $(document).ready(function () {
             $('#detail-obat').append(`
                 <li class="list-group-item">Nama &emsp;&emsp;: `+data.nama+`</li>
                 <li class="list-group-item">Harga &emsp;&emsp;: Rp. `+data.harga+`/pack</li>
-                <li class="list-group-item">Supplier &emsp;: `+data.kode_supplier+`</li>
-                <li class="list-group-item">Kategori &emsp;: `+data.kode_kategori+`</li>
+                <li class="list-group-item">Supplier &emsp;: `+data.nama_supplier+`</li>
+                <li class="list-group-item">Kategori &emsp;: `+data.nama_kategori+`</li>
             `)
         },
     });
