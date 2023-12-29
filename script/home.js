@@ -18,7 +18,7 @@ $(document).ready(function () {
                     $("#data-obat").append(`
                         <div class="col mb-3">
                         <div class="card" style="width: 16rem">
-                            <img src="`+ host +`upload/`+ obat[i].gambar +`" class="card-img-top" alt="" style="object-fit:cover;height:170px"/>
+                            <img src="`+ host + obat[i].gambar +`" class="card-img-top" alt="" style="object-fit:cover;height:170px"/>
                             <div class="card-body">
                                 <h5 class="card-title"><strong>`+ obat[i].nama +`</strong></h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
