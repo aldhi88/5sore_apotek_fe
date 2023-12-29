@@ -30,14 +30,14 @@ $(document).ready(function () {
             var data = response.body.data;
 
             $('#gambar-obat').append(`
-                <img src="`+ host + 'upload/'+data.gambar+`" class="img-fluid" alt="" />
+                <img src="`+ host +data.gambar+`" class="img-fluid" alt="" />
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ullam quisquam nihil quis culpa ipsam quod accusantium voluptas dolor necessitatibus voluptate odio voluptates, minima adipisci a iste est, quos porro? Lorem ipsum dolor sit amet consectetur
                     adipisicing elit. Ducimus quaerat laborum nihil aspernatur labore totam dolorum consectetur molestias, illo omnis tempora numquam repellendus impedit amet non placeat? A, atque dolor?
                 </p>
             `)
 
-            $('#detail-obat').append(`  
+            $('#detail-obat').append(`
                 <li class="list-group-item">Nama &emsp;&emsp;: `+data.nama+`</li>
                 <li class="list-group-item">Harga &emsp;&emsp;: Rp. `+data.harga+`/pack</li>
                 <li class="list-group-item">Supplier &emsp;: `+data.kode_supplier+`</li>
