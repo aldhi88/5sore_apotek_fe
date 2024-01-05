@@ -1,5 +1,4 @@
 <div class="container my-3">
-    <a class="text-dark" href="">Kembali</a>
     <div class="row mt-2">
         <div class="col-8">
             <div class="left-side">

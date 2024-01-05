@@ -14,6 +14,7 @@
                     <th scope="col">Supplier</th>
                     <th scope="col">Kategori</th>
                     <th scope="col">Harga</th>
+                    <th scope="col">Deskripsi</th>
                     <th scope="col">Aksi</th>
                 </tr>
             </thead>

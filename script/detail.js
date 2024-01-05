@@ -31,10 +31,7 @@ $(document).ready(function () {
 
             $('#gambar-obat').append(`
                 <img src="`+ host +data.gambar+`" class="img-fluid" alt="" />
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ullam quisquam nihil quis culpa ipsam quod accusantium voluptas dolor necessitatibus voluptate odio voluptates, minima adipisci a iste est, quos porro? Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Ducimus quaerat laborum nihil aspernatur labore totam dolorum consectetur molestias, illo omnis tempora numquam repellendus impedit amet non placeat? A, atque dolor?
-                </p>
+                <p>`+ data.deskripsi +`</p>
             `)
 
             $('#detail-obat').append(`

@@ -69,6 +69,7 @@ $(document).ready(function () {
             $("#kode_kategori").val(data.kode_kategori);
             $("#kode_supplier").val(data.kode_supplier);
             $("#harga").val(data.harga);
+            $("#desc").val(data.deskripsi);
         },
     });
 

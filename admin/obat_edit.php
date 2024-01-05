@@ -39,6 +39,10 @@
                 <input type="number" class="form-control" id="harga" name="harga" />
             </div>
             <div class="form-group">
+                <label for="harga">Deskripsi</label>
+                <textarea id="desc" class="form-control"  name="desc" rows="3"></textarea>
+            </div>
+            <div class="form-group">
                 <button class="btn btn-danger" type="reset">Reset</button>
                 <button class="btn btn-primary" type="submit">Submit</button>
             </div>
